@@ -10,95 +10,31 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as TVinylRouteImport } from './routes/t.vinyl'
-import { Route as TScratchRouteImport } from './routes/t.scratch'
-import { Route as TPullstripRouteImport } from './routes/t.pullstrip'
-import { Route as TPolaroidRouteImport } from './routes/t.polaroid'
-import { Route as TPlayfulRouteImport } from './routes/t.playful'
-import { Route as TOrbitRouteImport } from './routes/t.orbit'
-import { Route as TNotebookRouteImport } from './routes/t.notebook'
-import { Route as TInstaxRouteImport } from './routes/t.instax'
-import { Route as TGalaxyRouteImport } from './routes/t.galaxy'
-import { Route as TFireworksRouteImport } from './routes/t.fireworks'
-import { Route as TClassicRouteImport } from './routes/t.classic'
-import { Route as TCinematicRouteImport } from './routes/t.cinematic'
-import { Route as TChatRouteImport } from './routes/t.chat'
-import { Route as TBalloonRouteImport } from './routes/t.balloon'
+import { Route as IIdRouteImport } from './routes/i.$id'
 import { Route as TAlbumRouteImport } from './routes/t.album'
+import { Route as TBalloonRouteImport } from './routes/t.balloon'
+import { Route as TChatRouteImport } from './routes/t.chat'
+import { Route as TCinematicRouteImport } from './routes/t.cinematic'
+import { Route as TClassicRouteImport } from './routes/t.classic'
+import { Route as TFireworksRouteImport } from './routes/t.fireworks'
+import { Route as TGalaxyRouteImport } from './routes/t.galaxy'
+import { Route as TInstaxRouteImport } from './routes/t.instax'
+import { Route as TNotebookRouteImport } from './routes/t.notebook'
+import { Route as TOrbitRouteImport } from './routes/t.orbit'
+import { Route as TPlayfulRouteImport } from './routes/t.playful'
+import { Route as TPolaroidRouteImport } from './routes/t.polaroid'
+import { Route as TPullstripRouteImport } from './routes/t.pullstrip'
+import { Route as TScratchRouteImport } from './routes/t.scratch'
+import { Route as TVinylRouteImport } from './routes/t.vinyl'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TVinylRoute = TVinylRouteImport.update({
-  id: '/t/vinyl',
-  path: '/t/vinyl',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TScratchRoute = TScratchRouteImport.update({
-  id: '/t/scratch',
-  path: '/t/scratch',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TPullstripRoute = TPullstripRouteImport.update({
-  id: '/t/pullstrip',
-  path: '/t/pullstrip',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TPolaroidRoute = TPolaroidRouteImport.update({
-  id: '/t/polaroid',
-  path: '/t/polaroid',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TPlayfulRoute = TPlayfulRouteImport.update({
-  id: '/t/playful',
-  path: '/t/playful',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TOrbitRoute = TOrbitRouteImport.update({
-  id: '/t/orbit',
-  path: '/t/orbit',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TNotebookRoute = TNotebookRouteImport.update({
-  id: '/t/notebook',
-  path: '/t/notebook',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TInstaxRoute = TInstaxRouteImport.update({
-  id: '/t/instax',
-  path: '/t/instax',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TGalaxyRoute = TGalaxyRouteImport.update({
-  id: '/t/galaxy',
-  path: '/t/galaxy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TFireworksRoute = TFireworksRouteImport.update({
-  id: '/t/fireworks',
-  path: '/t/fireworks',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TClassicRoute = TClassicRouteImport.update({
-  id: '/t/classic',
-  path: '/t/classic',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TCinematicRoute = TCinematicRouteImport.update({
-  id: '/t/cinematic',
-  path: '/t/cinematic',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TChatRoute = TChatRouteImport.update({
-  id: '/t/chat',
-  path: '/t/chat',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TBalloonRoute = TBalloonRouteImport.update({
-  id: '/t/balloon',
-  path: '/t/balloon',
+const IIdRoute = IIdRouteImport.update({
+  id: '/i/$id',
+  path: '/i/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TAlbumRoute = TAlbumRouteImport.update({
@@ -106,9 +42,80 @@ const TAlbumRoute = TAlbumRouteImport.update({
   path: '/t/album',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TBalloonRoute = TBalloonRouteImport.update({
+  id: '/t/balloon',
+  path: '/t/balloon',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TChatRoute = TChatRouteImport.update({
+  id: '/t/chat',
+  path: '/t/chat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TCinematicRoute = TCinematicRouteImport.update({
+  id: '/t/cinematic',
+  path: '/t/cinematic',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TClassicRoute = TClassicRouteImport.update({
+  id: '/t/classic',
+  path: '/t/classic',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TFireworksRoute = TFireworksRouteImport.update({
+  id: '/t/fireworks',
+  path: '/t/fireworks',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TGalaxyRoute = TGalaxyRouteImport.update({
+  id: '/t/galaxy',
+  path: '/t/galaxy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TInstaxRoute = TInstaxRouteImport.update({
+  id: '/t/instax',
+  path: '/t/instax',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TNotebookRoute = TNotebookRouteImport.update({
+  id: '/t/notebook',
+  path: '/t/notebook',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TOrbitRoute = TOrbitRouteImport.update({
+  id: '/t/orbit',
+  path: '/t/orbit',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TPlayfulRoute = TPlayfulRouteImport.update({
+  id: '/t/playful',
+  path: '/t/playful',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TPolaroidRoute = TPolaroidRouteImport.update({
+  id: '/t/polaroid',
+  path: '/t/polaroid',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TPullstripRoute = TPullstripRouteImport.update({
+  id: '/t/pullstrip',
+  path: '/t/pullstrip',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TScratchRoute = TScratchRouteImport.update({
+  id: '/t/scratch',
+  path: '/t/scratch',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TVinylRoute = TVinylRouteImport.update({
+  id: '/t/vinyl',
+  path: '/t/vinyl',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/i/$id': typeof IIdRoute
   '/t/album': typeof TAlbumRoute
   '/t/balloon': typeof TBalloonRoute
   '/t/chat': typeof TChatRoute
@@ -127,6 +134,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/i/$id': typeof IIdRoute
   '/t/album': typeof TAlbumRoute
   '/t/balloon': typeof TBalloonRoute
   '/t/chat': typeof TChatRoute
@@ -146,6 +154,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/i/$id': typeof IIdRoute
   '/t/album': typeof TAlbumRoute
   '/t/balloon': typeof TBalloonRoute
   '/t/chat': typeof TChatRoute
@@ -166,6 +175,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/i/$id'
     | '/t/album'
     | '/t/balloon'
     | '/t/chat'
@@ -184,6 +194,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/i/$id'
     | '/t/album'
     | '/t/balloon'
     | '/t/chat'
@@ -202,6 +213,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/i/$id'
     | '/t/album'
     | '/t/balloon'
     | '/t/chat'
@@ -221,6 +233,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  IIdRoute: typeof IIdRoute
   TAlbumRoute: typeof TAlbumRoute
   TBalloonRoute: typeof TBalloonRoute
   TChatRoute: typeof TChatRoute
@@ -247,102 +260,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/t/vinyl': {
-      id: '/t/vinyl'
-      path: '/t/vinyl'
-      fullPath: '/t/vinyl'
-      preLoaderRoute: typeof TVinylRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/t/scratch': {
-      id: '/t/scratch'
-      path: '/t/scratch'
-      fullPath: '/t/scratch'
-      preLoaderRoute: typeof TScratchRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/t/pullstrip': {
-      id: '/t/pullstrip'
-      path: '/t/pullstrip'
-      fullPath: '/t/pullstrip'
-      preLoaderRoute: typeof TPullstripRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/t/polaroid': {
-      id: '/t/polaroid'
-      path: '/t/polaroid'
-      fullPath: '/t/polaroid'
-      preLoaderRoute: typeof TPolaroidRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/t/playful': {
-      id: '/t/playful'
-      path: '/t/playful'
-      fullPath: '/t/playful'
-      preLoaderRoute: typeof TPlayfulRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/t/orbit': {
-      id: '/t/orbit'
-      path: '/t/orbit'
-      fullPath: '/t/orbit'
-      preLoaderRoute: typeof TOrbitRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/t/notebook': {
-      id: '/t/notebook'
-      path: '/t/notebook'
-      fullPath: '/t/notebook'
-      preLoaderRoute: typeof TNotebookRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/t/instax': {
-      id: '/t/instax'
-      path: '/t/instax'
-      fullPath: '/t/instax'
-      preLoaderRoute: typeof TInstaxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/t/galaxy': {
-      id: '/t/galaxy'
-      path: '/t/galaxy'
-      fullPath: '/t/galaxy'
-      preLoaderRoute: typeof TGalaxyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/t/fireworks': {
-      id: '/t/fireworks'
-      path: '/t/fireworks'
-      fullPath: '/t/fireworks'
-      preLoaderRoute: typeof TFireworksRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/t/classic': {
-      id: '/t/classic'
-      path: '/t/classic'
-      fullPath: '/t/classic'
-      preLoaderRoute: typeof TClassicRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/t/cinematic': {
-      id: '/t/cinematic'
-      path: '/t/cinematic'
-      fullPath: '/t/cinematic'
-      preLoaderRoute: typeof TCinematicRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/t/chat': {
-      id: '/t/chat'
-      path: '/t/chat'
-      fullPath: '/t/chat'
-      preLoaderRoute: typeof TChatRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/t/balloon': {
-      id: '/t/balloon'
-      path: '/t/balloon'
-      fullPath: '/t/balloon'
-      preLoaderRoute: typeof TBalloonRouteImport
+    '/i/$id': {
+      id: '/i/$id'
+      path: '/i/$id'
+      fullPath: '/i/$id'
+      preLoaderRoute: typeof IIdRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/t/album': {
@@ -352,11 +274,110 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TAlbumRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/t/balloon': {
+      id: '/t/balloon'
+      path: '/t/balloon'
+      fullPath: '/t/balloon'
+      preLoaderRoute: typeof TBalloonRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/t/chat': {
+      id: '/t/chat'
+      path: '/t/chat'
+      fullPath: '/t/chat'
+      preLoaderRoute: typeof TChatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/t/cinematic': {
+      id: '/t/cinematic'
+      path: '/t/cinematic'
+      fullPath: '/t/cinematic'
+      preLoaderRoute: typeof TCinematicRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/t/classic': {
+      id: '/t/classic'
+      path: '/t/classic'
+      fullPath: '/t/classic'
+      preLoaderRoute: typeof TClassicRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/t/fireworks': {
+      id: '/t/fireworks'
+      path: '/t/fireworks'
+      fullPath: '/t/fireworks'
+      preLoaderRoute: typeof TFireworksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/t/galaxy': {
+      id: '/t/galaxy'
+      path: '/t/galaxy'
+      fullPath: '/t/galaxy'
+      preLoaderRoute: typeof TGalaxyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/t/instax': {
+      id: '/t/instax'
+      path: '/t/instax'
+      fullPath: '/t/instax'
+      preLoaderRoute: typeof TInstaxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/t/notebook': {
+      id: '/t/notebook'
+      path: '/t/notebook'
+      fullPath: '/t/notebook'
+      preLoaderRoute: typeof TNotebookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/t/orbit': {
+      id: '/t/orbit'
+      path: '/t/orbit'
+      fullPath: '/t/orbit'
+      preLoaderRoute: typeof TOrbitRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/t/playful': {
+      id: '/t/playful'
+      path: '/t/playful'
+      fullPath: '/t/playful'
+      preLoaderRoute: typeof TPlayfulRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/t/polaroid': {
+      id: '/t/polaroid'
+      path: '/t/polaroid'
+      fullPath: '/t/polaroid'
+      preLoaderRoute: typeof TPolaroidRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/t/pullstrip': {
+      id: '/t/pullstrip'
+      path: '/t/pullstrip'
+      fullPath: '/t/pullstrip'
+      preLoaderRoute: typeof TPullstripRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/t/scratch': {
+      id: '/t/scratch'
+      path: '/t/scratch'
+      fullPath: '/t/scratch'
+      preLoaderRoute: typeof TScratchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/t/vinyl': {
+      id: '/t/vinyl'
+      path: '/t/vinyl'
+      fullPath: '/t/vinyl'
+      preLoaderRoute: typeof TVinylRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  IIdRoute: IIdRoute,
   TAlbumRoute: TAlbumRoute,
   TBalloonRoute: TBalloonRoute,
   TChatRoute: TChatRoute,

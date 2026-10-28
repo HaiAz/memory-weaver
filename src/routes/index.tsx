@@ -135,7 +135,7 @@ const templates = [
     to: "/t/instax",
     name: "Instax",
     tag: "Chụp lấy liền",
-    desc: "Bấm nút chụp, ảnh polaroid trượt ra khỏi máy và hiện dần như thật.",
+    desc: "Bấm chụp từng tấm trượt ra khỏi máy, kéo cả dải phim xuống rồi treo lên dây đèn.",
     icon: Camera,
     hue: "from-[#f8b8c8] to-[#c45c7c]",
   },
