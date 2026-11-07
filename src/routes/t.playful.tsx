@@ -40,9 +40,9 @@ function PlayfulTemplate() {
           transition={{ type: "spring", stiffness: 200, damping: 12 }}
           className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-white/80 shadow-petal"
         >
-          <Heart className="h-10 w-10 animate-heart-pulse fill-primary text-primary" />
+          <Heart className="h-10 w-10 animate-heart-pulse fill-primary text-brand" />
         </motion.div>
-        <h1 className="mt-6 font-script text-6xl text-primary sm:text-7xl">Này em ơi</h1>
+        <h1 className="mt-6 font-script text-6xl text-brand sm:text-7xl">Này em ơi</h1>
         <p className="mt-4 text-lg text-foreground/80">
           Di chuột đi — sẽ có trái tim bay theo đó. Cuộn xuống nữa nhé.
         </p>
@@ -57,9 +57,9 @@ function PlayfulTemplate() {
 
       <section className="relative z-30 mx-auto max-w-3xl px-4 py-16">
         <div className="mb-8 flex items-center justify-center gap-2 text-center">
-          <Sparkles className="h-5 w-5 text-primary" />
+          <Sparkles className="h-5 w-5 text-brand" />
           <h2 className="font-display text-3xl">Vì sao anh yêu em</h2>
-          <Sparkles className="h-5 w-5 text-primary" />
+          <Sparkles className="h-5 w-5 text-brand" />
         </div>
         <ul className="grid gap-3 sm:grid-cols-2">
           {reasons.map((r, i) => (
@@ -71,7 +71,7 @@ function PlayfulTemplate() {
               transition={{ delay: i * 0.08 }}
               className="rounded-2xl border border-white/60 bg-white/60 p-5 text-foreground/90 shadow-soft backdrop-blur transition-transform hover:-translate-y-1"
             >
-              <span className="mr-2 font-script text-2xl text-primary">
+              <span className="mr-2 font-script text-2xl text-brand">
                 {String(i + 1).padStart(2, "0")}.
               </span>
               {r}
@@ -81,7 +81,7 @@ function PlayfulTemplate() {
       </section>
 
       <section className="relative z-30 mx-auto max-w-2xl px-4 py-24 text-center">
-        <h2 className="font-script text-5xl text-primary sm:text-6xl">Mãi bên nhau nhé?</h2>
+        <h2 className="font-script text-5xl text-brand sm:text-6xl">Mãi bên nhau nhé?</h2>
         <p className="mt-4 text-foreground/70">Nhấn nút — anh có một điều bất ngờ.</p>
         <button
           onClick={() => {

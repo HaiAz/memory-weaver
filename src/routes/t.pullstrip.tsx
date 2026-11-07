@@ -81,7 +81,7 @@ function PullStripTemplate() {
       <SiteHeader />
 
       <section className="relative z-20 mx-auto max-w-3xl px-4 py-8 text-center">
-        <p className="font-script text-2xl text-primary">Kéo dải phim kỷ niệm</p>
+        <p className="font-script text-2xl text-brand">Kéo dải phim kỷ niệm</p>
         <h1 className="mt-1 font-display text-3xl sm:text-4xl">
           Bấm chụp — rồi kéo dài mãi…
         </h1>
@@ -202,7 +202,7 @@ function PullStripTemplate() {
               {/* Hint */}
               <motion.div
                 style={{ opacity: hintOp }}
-                className="pointer-events-none absolute left-1/2 top-full mt-4 -translate-x-1/2 text-center text-xs text-primary"
+                className="pointer-events-none absolute left-1/2 top-full mt-4 -translate-x-1/2 text-center text-xs text-brand"
               >
                 <div className="animate-bounce">↓ Kéo xuống ↓</div>
               </motion.div>

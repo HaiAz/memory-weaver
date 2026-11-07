@@ -91,7 +91,7 @@ function ScratchTemplate() {
       <SiteHeader />
 
       <section className="relative z-20 mx-auto max-w-2xl px-4 py-10 text-center">
-        <p className="font-script text-3xl text-primary">Có gì đó cho em</p>
+        <p className="font-script text-3xl text-brand">Có gì đó cho em</p>
         <h1 className="mt-2 font-display text-4xl sm:text-5xl">Cào lớp phủ ra nhé</h1>
         <p className="mt-3 text-muted-foreground">
           Giữ chuột và di để lộ lời nhắn bên dưới ({Math.round(percent * 100)}%)
@@ -102,7 +102,7 @@ function ScratchTemplate() {
         <div className="relative mx-auto aspect-[8/5] w-full overflow-hidden rounded-3xl border border-border/60 bg-card shadow-petal">
           {/* Message underneath */}
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-[#fff5f9] to-[#ffe0ec] p-6 text-center">
-            <p className="font-script text-3xl text-primary sm:text-4xl">Anh yêu em ♡</p>
+            <p className="font-script text-3xl text-brand sm:text-4xl">Anh yêu em ♡</p>
             <p className="mt-3 font-display text-lg text-foreground/80 sm:text-xl">
               Cảm ơn em vì đã là điều đẹp nhất trong đời anh.
             </p>
@@ -133,7 +133,7 @@ function ScratchTemplate() {
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mt-8 text-center font-script text-3xl text-primary"
+            className="mt-8 text-center font-script text-3xl text-brand"
           >
             Em thấy chưa? ❤
           </motion.p>

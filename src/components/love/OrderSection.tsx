@@ -107,13 +107,12 @@ export function OrderSection() {
     <section id="order" className="relative z-20 mx-auto max-w-5xl px-4 pb-24">
       <div className="mb-8 text-center">
         <div className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-card/60 px-4 py-1.5 text-xs text-muted-foreground backdrop-blur">
-          <Sparkles className="h-3.5 w-3.5 text-primary" /> Tuỳ biến & đặt template
+          <Sparkles className="h-3.5 w-3.5 text-brand" /> Tuỳ biến & đặt template
         </div>
         <h2 className="mt-4 font-display text-4xl sm:text-5xl">Chọn một, viết lời nhắn, gửi đi</h2>
         <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
           Trang riêng của bạn sẽ có dạng{" "}
-          <span className="font-mono text-primary">tên.loveletters.vn</span> — sẵn sàng trong ít
-          phút.
+          <span className="font-mono text-brand">tên.loveletters.vn</span> — sẵn sàng trong ít phút.
         </p>
       </div>
 
@@ -139,8 +138,8 @@ export function OrderSection() {
                       onClick={() => setTemplateId(t.id)}
                       className={`rounded-2xl border p-4 text-left transition-all ${
                         active
-                          ? "border-primary bg-primary/10 shadow-soft"
-                          : "border-border bg-background hover:border-primary/40"
+                          ? "border-brand bg-primary/70 shadow-soft"
+                          : "border-border bg-background hover:border-brand/40"
                       }`}
                     >
                       <div className="font-display text-base">{t.name}</div>
@@ -157,7 +156,7 @@ export function OrderSection() {
                 Tên trang <span className="text-muted-foreground">(tên.loveletters.vn)</span>
               </label>
               <div className="mt-2 flex gap-2">
-                <div className="flex flex-1 items-center rounded-xl border border-border bg-background focus-within:border-primary">
+                <div className="flex flex-1 items-center rounded-xl border border-border bg-background focus-within:border-brand">
                   <input
                     value={name}
                     onChange={(e) => {
@@ -217,7 +216,7 @@ export function OrderSection() {
                 onChange={(e) => setContent(e.target.value)}
                 rows={5}
                 placeholder={"Cảm ơn em vì đã đến bên anh...\nAnh sẽ mãi yêu em..."}
-                className="mt-2 w-full resize-none rounded-xl border border-border bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-primary"
+                className="mt-2 w-full resize-none rounded-xl border border-border bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-brand"
               />
               <div className="mt-1 text-xs text-muted-foreground">
                 {content.split("\n").filter((l) => l.trim()).length} câu
@@ -236,8 +235,8 @@ export function OrderSection() {
                       onClick={() => setTip(active ? null : v)}
                       className={`rounded-xl border px-4 py-2 text-sm font-medium transition-all ${
                         active
-                          ? "border-primary bg-primary text-primary-foreground"
-                          : "border-primary/40 text-primary hover:bg-primary/10"
+                          ? "border-brand bg-primary text-primary-foreground"
+                          : "border-brand/40 text-brand hover:bg-primary/70"
                       }`}
                     >
                       {fmt(v)}
@@ -248,8 +247,8 @@ export function OrderSection() {
                   onClick={() => setTip(tip === "custom" ? null : "custom")}
                   className={`rounded-xl border px-4 py-2 text-sm font-medium transition-all ${
                     tip === "custom"
-                      ? "border-primary bg-primary text-primary-foreground"
-                      : "border-primary/40 text-primary hover:bg-primary/10"
+                      ? "border-brand bg-primary text-primary-foreground"
+                      : "border-brand/40 text-brand hover:bg-primary/70"
                   }`}
                 >
                   Tuỳ tâm
@@ -261,7 +260,7 @@ export function OrderSection() {
                     value={customTip}
                     onChange={(e) => setCustomTip(e.target.value)}
                     placeholder="Số tiền (đ)"
-                    className="w-32 rounded-xl border border-border bg-background px-3 py-2 text-sm outline-none focus:border-primary"
+                    className="w-32 rounded-xl border border-border bg-background px-3 py-2 text-sm outline-none focus:border-brand"
                   />
                 )}
               </div>
@@ -274,7 +273,7 @@ export function OrderSection() {
             <div>
               <label className="text-sm font-medium text-foreground">Voucher</label>
               <div className="mt-2 flex gap-2">
-                <div className="flex flex-1 items-center gap-2 rounded-xl border border-border bg-background px-3 focus-within:border-primary">
+                <div className="flex flex-1 items-center gap-2 rounded-xl border border-border bg-background px-3 focus-within:border-brand">
                   <Ticket className="h-4 w-4 text-muted-foreground" />
                   <input
                     value={voucher}
@@ -324,7 +323,7 @@ export function OrderSection() {
           {/* RIGHT: summary (sticky on desktop) */}
           <aside className="border-t border-border bg-gradient-to-b from-secondary/60 to-background p-6 sm:p-8 md:border-l md:border-t-0">
             <div className="md:sticky md:top-24">
-              <div className="text-xs uppercase tracking-widest text-primary">Tóm tắt đơn</div>
+              <div className="text-xs uppercase tracking-widest text-brand">Tóm tắt đơn</div>
               <div className="mt-3 rounded-2xl border border-border bg-card p-5 shadow-soft">
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-muted-foreground">Template</span>
@@ -349,7 +348,7 @@ export function OrderSection() {
                 <div className="my-4 border-t border-dashed border-border" />
                 <div className="flex items-end justify-between">
                   <span className="text-sm text-muted-foreground">Tổng cộng</span>
-                  <span className="font-display text-3xl font-bold tabular-nums text-primary">
+                  <span className="font-display text-3xl font-bold tabular-nums text-brand">
                     {fmt(total)}
                   </span>
                 </div>

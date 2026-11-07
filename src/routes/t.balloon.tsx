@@ -218,7 +218,7 @@ function BalloonTemplate() {
       <SiteHeader />
 
       <section className="relative z-20 mx-auto max-w-3xl px-4 pb-2 pt-10 text-center">
-        <p className="font-script text-3xl text-primary">Bấm hết bóng bay nhé</p>
+        <p className="font-script text-3xl text-brand">Bấm hết bóng bay nhé</p>
         <h1 className="mt-2 font-display text-4xl sm:text-5xl">Em sẽ thấy điều anh muốn nói</h1>
         <p className="mt-3 text-sm text-muted-foreground">
           {allPopped ? "Xong rồi đó ❤" : `Đã nổ ${popped.size}/${words.length} quả bóng`}
@@ -234,14 +234,14 @@ function BalloonTemplate() {
               initial={{ scale: 0, y: 20 }}
               animate={{ scale: 1, y: 0 }}
               transition={{ type: "spring", stiffness: 260, damping: 18 }}
-              className="rounded-2xl bg-white/75 px-4 py-1.5 font-display text-2xl text-primary shadow-soft backdrop-blur"
+              className="rounded-2xl bg-white/75 px-4 py-1.5 font-display text-2xl text-brand shadow-soft backdrop-blur"
             >
               {w}
             </motion.span>
           ) : (
             <span
               key={i}
-              className="rounded-2xl border-2 border-dashed border-primary/30 px-4 py-1.5 text-2xl text-transparent"
+              className="rounded-2xl border-2 border-dashed border-brand/30 px-4 py-1.5 text-2xl text-transparent"
               aria-hidden
             >
               {w}
@@ -329,15 +329,15 @@ function BalloonTemplate() {
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ type: "spring", stiffness: 200, damping: 16 }}
               >
-                <Heart className="mx-auto h-12 w-12 animate-heart-pulse fill-primary text-primary" />
-                <h2 className="mt-4 font-script text-5xl text-primary">Yêu em ngàn lần ❤</h2>
+                <Heart className="mx-auto h-12 w-12 animate-heart-pulse fill-primary text-brand" />
+                <h2 className="mt-4 font-script text-5xl text-brand">Yêu em ngàn lần ❤</h2>
                 <p className="mt-3 text-muted-foreground">
                   Từ hôm nay, mọi quả bóng anh thả lên trời đều mang tên em.
                 </p>
               </motion.div>
             ) : (
               <>
-                <h2 className="font-script text-5xl text-primary">Em đồng ý nhé?</h2>
+                <h2 className="font-script text-5xl text-brand">Em đồng ý nhé?</h2>
                 <button
                   onClick={accept}
                   className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3 font-medium text-primary-foreground shadow-petal transition-transform hover:scale-110"

@@ -35,7 +35,7 @@ export function LoveClock({ since = "2022-02-14T00:00:00" }: { since?: string })
           key={it.label}
           className="rounded-2xl border border-border/60 bg-card/70 px-4 py-5 text-center backdrop-blur-sm shadow-soft"
         >
-          <div className="font-display text-3xl font-bold tabular-nums text-primary sm:text-4xl">
+          <div className="font-display text-3xl font-bold tabular-nums text-brand sm:text-4xl">
             {String(it.value).padStart(2, "0")}
           </div>
           <div className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">

@@ -60,7 +60,7 @@ function AlbumTemplate() {
       <SiteHeader />
 
       <section className="relative z-20 mx-auto max-w-4xl px-4 py-12 text-center">
-        <p className="font-script text-2xl text-primary">Kỷ niệm của chúng ta</p>
+        <p className="font-script text-2xl text-brand">Kỷ niệm của chúng ta</p>
         <h1 className="mt-2 font-display text-4xl sm:text-5xl">Album những ngày bên nhau</h1>
       </section>
 
@@ -76,7 +76,7 @@ function AlbumTemplate() {
               className={`aspect-[16/10] w-full bg-gradient-to-br ${photos[idx].hue}`}
             >
               <div className="flex h-full items-end p-8">
-                <div className="rounded-full bg-white/70 px-5 py-2 font-script text-2xl text-primary shadow-soft backdrop-blur">
+                <div className="rounded-full bg-white/70 px-5 py-2 font-script text-2xl text-brand shadow-soft backdrop-blur">
                   {photos[idx].caption}
                 </div>
               </div>
@@ -88,14 +88,14 @@ function AlbumTemplate() {
             className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-3 shadow-soft transition-transform hover:scale-110"
             aria-label="Ảnh trước"
           >
-            <ChevronLeft className="h-5 w-5 text-primary" />
+            <ChevronLeft className="h-5 w-5 text-brand" />
           </button>
           <button
             onClick={next}
             className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-3 shadow-soft transition-transform hover:scale-110"
             aria-label="Ảnh sau"
           >
-            <ChevronRight className="h-5 w-5 text-primary" />
+            <ChevronRight className="h-5 w-5 text-brand" />
           </button>
         </div>
 
@@ -105,7 +105,7 @@ function AlbumTemplate() {
               key={i}
               onClick={() => setIdx(i)}
               className={`h-2 rounded-full transition-all ${
-                i === idx ? "w-8 bg-primary" : "w-2 bg-primary/30"
+                i === idx ? "w-8 bg-brand" : "w-2 bg-brand/30"
               }`}
               aria-label={`Ảnh ${i + 1}`}
             />
@@ -122,7 +122,7 @@ function AlbumTemplate() {
 
       <section className="relative z-20 mx-auto max-w-3xl px-4 pb-24">
         <h2 className="text-center font-display text-3xl">Dòng thời gian</h2>
-        <div className="relative mt-10 border-l-2 border-primary/30 pl-6">
+        <div className="relative mt-10 border-l-2 border-brand/30 pl-6">
           {timeline.map((t, i) => (
             <motion.div
               key={i}
@@ -136,7 +136,7 @@ function AlbumTemplate() {
                 <Heart className="h-3 w-3 fill-current" />
               </span>
               <div className="rounded-2xl border border-border/60 bg-card/80 p-5 backdrop-blur">
-                <div className="text-xs uppercase tracking-widest text-primary">{t.date}</div>
+                <div className="text-xs uppercase tracking-widest text-brand">{t.date}</div>
                 <h3 className="mt-1 font-display text-xl">{t.title}</h3>
                 <p className="mt-1 text-sm text-muted-foreground">{t.text}</p>
               </div>

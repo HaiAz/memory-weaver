@@ -34,8 +34,8 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border/50 bg-background/70 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <Link to="/" className="flex items-center gap-2">
-          <Heart className="h-5 w-5 fill-primary text-primary" />
-          <span className="font-script text-2xl text-primary">Love Letters</span>
+          <Heart className="h-5 w-5 fill-primary text-brand" />
+          <span className="font-script text-2xl text-brand">Love Letters</span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
@@ -75,7 +75,7 @@ export function SiteHeader() {
                       onClick={() => setOpen(false)}
                       className={`rounded-lg px-3 py-2 text-sm transition-colors ${
                         pathname === t.to
-                          ? "bg-primary/10 text-primary"
+                          ? "bg-primary/70 text-brand"
                           : "text-foreground/80 hover:bg-secondary"
                       }`}
                     >

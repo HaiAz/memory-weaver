@@ -233,7 +233,7 @@ function ClassicTemplate() {
                 }}
               >
                 <Heart
-                  className="pointer-events-none absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 -rotate-6 fill-primary/5 text-primary/5"
+                  className="pointer-events-none absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 -rotate-6 fill-primary/5 text-brand/5"
                   aria-hidden
                 />
                 <div className="relative font-display text-[15px] leading-7 text-[#4a3b44]">
@@ -277,13 +277,13 @@ function ClassicTemplate() {
                     boxShadow: "inset 0 -10px 12px -12px rgba(120,60,80,0.18)",
                   }}
                 >
-                  <p className="font-script text-2xl leading-9 text-primary">
+                  <p className="font-script text-2xl leading-9 text-brand">
                     Gửi người thương của anh,
                   </p>
                   <div className="mb-2 mt-1 flex items-center gap-3" aria-hidden>
-                    <span className="h-px flex-1 bg-primary/15" />
-                    <Heart className="h-3 w-3 fill-primary/35 text-primary/35" />
-                    <span className="h-px flex-1 bg-primary/15" />
+                    <span className="h-px flex-1 bg-brand/15" />
+                    <Heart className="h-3 w-3 fill-primary/35 text-brand/35" />
+                    <span className="h-px flex-1 bg-brand/15" />
                   </div>
                   <div className="font-display text-[15px] leading-7 text-[#4a3b44]">
                     {topLines.map((line, i) => (
@@ -309,8 +309,8 @@ function ClassicTemplate() {
                   }}
                 >
                   <div className="flex h-full flex-col items-center justify-center gap-1.5">
-                    <Heart className="h-6 w-6 fill-primary/40 text-primary/40" />
-                    <p className="font-script text-2xl text-primary/70">Gửi em ♡</p>
+                    <Heart className="h-6 w-6 fill-primary/40 text-brand/40" />
+                    <p className="font-script text-2xl text-brand/70">Gửi em ♡</p>
                   </div>
                 </div>
               </motion.div>
@@ -361,7 +361,7 @@ function ClassicTemplate() {
                         : 0,
                       duration: 0.6,
                     }}
-                    className="mt-1 text-right font-script text-2xl text-primary"
+                    className="mt-1 text-right font-script text-2xl text-brand"
                   >
                     — Của em ❤
                   </motion.p>
@@ -448,7 +448,7 @@ function ClassicTemplate() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="font-script text-2xl text-primary"
+                className="font-script text-2xl text-brand"
               >
                 Nhấn để mở thư ✿
               </motion.p>
@@ -467,7 +467,7 @@ function ClassicTemplate() {
             exit={{ opacity: 0, y: 16 }}
             transition={{ delay: 1.0 }}
             onClick={closeLetter}
-            className="fixed bottom-6 right-6 z-50 rounded-full border border-primary/40 bg-white/80 px-5 py-2.5 font-script text-xl text-primary shadow-petal backdrop-blur transition-transform hover:scale-105"
+            className="fixed bottom-6 right-6 z-50 rounded-full border border-brand/40 bg-white/80 px-5 py-2.5 font-script text-xl text-brand shadow-petal backdrop-blur transition-transform hover:scale-105"
           >
             Gấp thư lại ✉
           </motion.button>
